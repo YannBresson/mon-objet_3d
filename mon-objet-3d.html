@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualisation 3D - Assemblage Calibration</title>
+    <!-- Import du composant model-viewer de Google -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      /* Styles de base pour centrer le modèle et ajuster la page */
+      body {
+        margin: 0;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      model-viewer {
+        width: 90vw;
+        height: 90vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Affichage du modèle 3D -->
+    <model-viewer src="Assemblage calibration v1.glb"
+                  alt="Assemblage Calibration V1"
+                  auto-rotate
+                  camera-controls
+                  ar>
+    </model-viewer>
+  </body>
+</html>
